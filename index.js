@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
@@ -8,7 +10,17 @@ class Game extends React.Component {
     return (
       <div className="game">
         <div className="game-board">
-          <Board rows={10} cols={10} />
+          <Board name="board1" rows={10} cols={10} />
+        </div>
+        <div className="game-board">
+          <Board name="board2" rows={10} cols={10} />
+        </div>
+        <div> button row here</div>
+        <div className="game-board">
+          <Board name="board3" rows={10} cols={10} />
+        </div>
+        <div className="game-board">
+          <Board name="board4" rows={10} cols={10} />
         </div>
         <div className="game-info">
           <div>{/* status */}</div>

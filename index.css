@@ -41,11 +41,14 @@ ul {
   background: #ddd;
 }
 
-.game {
+/*.game {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
+*/
 .game-info {
   margin-left: 20px;
+}
+.board {
+  min-width: 350px;
 }

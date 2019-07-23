@@ -1,24 +1,26 @@
 import React from "react";
 import Square from "./Square";
+import "./index.css";
 
 class Board extends React.Component {
   render() {
     console.log(this.props);
     console.log("je je");
-    const status = "Next player: X";
     const rows = [...Array(this.props.rows).keys()];
     const cols = [...Array(this.props.cols).keys()];
 
     var result = (
-      <div>
-        <div className="status">{status}</div>
+      <div class="board">
+        [{" "}
         {rows.map(y => (
-          <div>
+          <div key={y}>
             {cols.map(x => (
-              <Square data-x={x} data-y={y} />
+              <Square onmouseover key={x} x={x} y={y} />
             ))}
+            <div />
           </div>
         ))}
+        <div />
       </div>
     );
 
