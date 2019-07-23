@@ -15,13 +15,6 @@ class Game extends React.Component {
         <div className="game-board">
           <Board name="board2" rows={10} cols={10} />
         </div>
-        <div> button row here</div>
-        <div className="game-board">
-          <Board name="board3" rows={10} cols={10} />
-        </div>
-        <div className="game-board">
-          <Board name="board4" rows={10} cols={10} />
-        </div>
         <div className="game-info">
           <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>

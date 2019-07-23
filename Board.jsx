@@ -10,17 +10,14 @@ class Board extends React.Component {
     const cols = [...Array(this.props.cols).keys()];
 
     var result = (
-      <div class="board">
-        [{" "}
+      <div className="board">
         {rows.map(y => (
           <div key={y}>
             {cols.map(x => (
-              <Square onmouseover key={x} x={x} y={y} />
+              <Square key={x} x={x} y={y} />
             ))}
-            <div />
           </div>
         ))}
-        <div />
       </div>
     );
 
