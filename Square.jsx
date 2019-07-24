@@ -35,7 +35,7 @@ class Square extends React.Component {
         className={className}
       >
         {x + ":" + y}
-        {/* TODO */}
+        {/* TO DO */}
       </button>
     );
   }
