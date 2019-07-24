@@ -17,15 +17,15 @@ class Square extends React.Component {
   render() {
     var className = "square";
 
-    const { x, y, squares } = this.props;
+    const { x, y } = this.props;
 
     className = this.state.hover ? "hovered" : "square";
     debugger;
-    for (var i = 0; i < squares.length; i++) {
-      if (x === squares[i].x && y === squares[i].y) {
-        className = className + " hit";
-      }
-    }
+    //for (var i = 0; i < squares.length; i++) {
+    //  if (x === squares[i].x && y === squares[i].y) {
+    //    className = className + " hit";
+    //  }
+    //}
 
     //const style = { background: color };
     return (
