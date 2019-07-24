@@ -15,13 +15,23 @@ class Square extends React.Component {
     this.setState({ hover: hover });
   }
   render() {
-    const color = this.state.hover ? "blue" : "white";
-    const style = { background: color };
-    const x = this.props.x;
-    const y = this.props.y;
+    /*const x = this.props.x;
+    const y = this.props.y;*/
+    const { x, y, squares } = this.props;
+    var color = this.state.hover ? "blue" : "white";
+    debugger;
+    for (var i = 0; i < squares.length; i++) {
+      if (x === squares[i].x && y === squares[i].y) {
+        color = "orange";
+      }
+    }
 
+    const style = { background: color };
     return (
       <button
+        occupied={false}
+        shot={false}
+        hit={false}
         onMouseEnter={() => this.updateHoverState(true)}
         onMouseLeave={() => this.updateHoverState(false)}
         className="square"

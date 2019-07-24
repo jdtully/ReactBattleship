@@ -2,6 +2,13 @@ import React from "react";
 import Square from "./Square";
 import "./index.css";
 
+const squares = [
+  { x: 3, y: 7 },
+  { x: 4, y: 7 },
+  { x: 4, y: 8 },
+  { x: 4, y: 5 },
+  { x: 0, y: 0 }
+];
 class Board extends React.Component {
   render() {
     console.log(this.props);
@@ -14,7 +21,7 @@ class Board extends React.Component {
         {rows.map(y => (
           <div key={y}>
             {cols.map(x => (
-              <Square key={x} x={x} y={y} />
+              <Square squares={squares} key={x} x={x} y={y} />
             ))}
           </div>
         ))}
