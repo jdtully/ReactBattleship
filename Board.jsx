@@ -9,19 +9,24 @@ const squares = [
   { x: 4, y: 8 },
   { x: 4, y: 9 }
 ];
+
 class Board extends React.Component {
   render() {
     console.log(this.props);
     console.log("je je");
     const rows = [...Array(this.props.rows).keys()];
     const cols = [...Array(this.props.cols).keys()];
+    var hovered = false;
+    for (var i = 0; i < squares.length; i++) {
+      hovered = true;
+    }
     var result = (
       <div className="board">
         {rows.map(y => (
           <div key={y}>
             {cols.map(x => (
               <Square
-                hovered={false}
+                hovered={hovered}
                 occupied={false}
                 shot={false}
                 hit={false}
