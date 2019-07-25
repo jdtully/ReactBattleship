@@ -6,7 +6,8 @@ class Square extends React.Component {
     super(props);
 
     this.state = {
-      hover: false
+      hover: false,
+      clicked: false
     };
 
     this.updateHoverState = this.updateHoverState.bind(this);
