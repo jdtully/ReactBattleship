@@ -19,7 +19,8 @@ class Square extends React.Component {
   }
 
   clickHandler() {
-    console.log("clickhandler");
+    this.setState({ clicked: true });
+    console.log("clickHandler");
   }
   render() {
     var className = "square";
