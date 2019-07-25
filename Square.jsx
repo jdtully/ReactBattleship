@@ -32,6 +32,7 @@ class Square extends React.Component {
       <button
         onMouseEnter={() => this.updateHoverState(true)}
         onMouseLeave={() => this.updateHoverState(false)}
+        onClick={this.clickHandler}
         className={className}
       >
         {x + ":" + y}
