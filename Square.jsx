@@ -16,6 +16,10 @@ class Square extends React.Component {
   updateHoverState(hover) {
     this.setState({ hover: hover });
   }
+
+  clickHandler() {
+    console.log("clickhandler");
+  }
   render() {
     var className = "square";
 
