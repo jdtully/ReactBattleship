@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 class Square extends React.Component {
   constructor(props) {
@@ -20,14 +21,7 @@ class Square extends React.Component {
     const { x, y } = this.props;
 
     className = this.state.hover ? "hovered" : "square";
-    debugger;
-    //for (var i = 0; i < squares.length; i++) {
-    //  if (x === squares[i].x && y === squares[i].y) {
-    //    className = className + " hit";
-    //  }
-    //}
 
-    //const style = { background: color };
     return (
       <button
         onMouseEnter={() => this.updateHoverState(true)}

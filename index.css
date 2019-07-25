@@ -33,26 +33,71 @@ ul {
   width: 34px;
 }
 
-.square.hovered {
+.hovered {
   background: green;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
 }
-.square.collision {
+.collision {
   background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
 }
-.square.shot {
+.shot {
   background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
 }
-.square.occupied {
+.occupied {
   background: yellow;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
 }
-.square.hit {
+.hit {
+  background-image: url("./boom.png");
   background-size: 50px 50px;
 }
 
-.square:focus {
+/*.square:focus {
   outline: none;
 }
-
+*/
 .kbd-navigation .square:focus {
   background: #ddd;
 }
@@ -62,9 +107,10 @@ ul {
   flex-direction: row;
 }
 
-.game-info {
+/*.game-info {
   margin-left: 20px;
-}
+} */
 .board {
   min-width: 350px;
+  max-height: 350px;
 }

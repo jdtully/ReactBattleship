@@ -16,21 +16,24 @@ class Board extends React.Component {
       { x: 4, y: 8 },
       { x: 4, y: 9 }
     ];
-    var hovered = false;
+    //var hovered = false;
+    var shot = false;
+    var hit = false;
+    var occupied = false;
     var result = (
       <div className="board">
         {rows.map(y => (
           <div key={y}>
             {cols.map(x => {
-              var occupied = squares.some(
+              occupied = squares.some(
                 square => x === square.x && y === square.y
               );
               return (
                 <Square
-                  hovered={hovered}
+                  hovered={false}
                   occupied={occupied}
-                  shot={false}
-                  hit={false}
+                  shot={shot}
+                  hit={hit}
                   squares={squares}
                   key={x}
                   x={x}
