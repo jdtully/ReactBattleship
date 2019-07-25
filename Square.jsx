@@ -11,6 +11,7 @@ class Square extends React.Component {
     };
 
     this.updateHoverState = this.updateHoverState.bind(this);
+    this.clickHandler = this.clickHandler.bind(this);
   }
 
   updateHoverState(hover) {
