@@ -5,6 +5,7 @@ import "./index.css";
 class Board extends React.Component {
   render() {
     console.log(this.props);
+    console.log("testing");
 
     //const { x, y } = this.props;
     const rows = [...Array(this.props.rows).keys()];
