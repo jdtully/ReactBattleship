@@ -19,11 +19,12 @@ class Game extends React.Component {
           <div>{/* status */}</div>
           <ol>{/* TODO */}</ol>
         </div>
+        <div />
       </div>
     );
   }
 }
 
-// ===========================================
+// ==============================================
 
 ReactDOM.render(<Game />, document.getElementById("root"));
